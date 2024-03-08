@@ -48,12 +48,12 @@
       <!--  -->
       <div>
         <div class="info-header">
-          <span>
-            <!-- <i id="cart" class="fa-solid fa-cart-shopping"></i> -->
+          <span id="main-count">
             <img src="./images/icon-cart.svg" id="cart" alt="cart-itms">
+            <span id="count">0</span>
             <div id="cart-click" class="cart-item">
               <h6>Cart</h6>
-              <div class="content">
+              <div class="content empty">
                 <p>Your cart is empty.</p>
               </div>
             </div>
@@ -122,16 +122,21 @@
           <h1>Fall Limited Edition <br> Sneakers</h1>
           <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
             durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-          <h2>$125.00 <span>50%</span></h2>
+
+          <div class="price">
+            <h2>$125.00 <span>50%</span></h2>
+            <h2 style="color: gray; text-decoration: line-through; font-size: 16px;">$250.00 </h2>
+          </div>
           <div class="control">
             <div class="count">
-              <button><img src="./images/icon-minus.svg" alt=""></button>
-              <h2>0</h2>
-              <button>
+              <button id="decreases"><img src="./images/icon-minus.svg" alt=""></button>
+              <h2 id="amount-value">0</h2>
+              <button id="increases">
                 <img src="./images/icon-plus.svg" alt="">
               </button>
             </div>
-            <button class="btn">
+            <button id="submit" class="btn">
+              <i class="fa-solid fa-cart-shopping"></i>
               Add To Cart
             </button>
           </div>
